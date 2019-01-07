@@ -7,7 +7,6 @@ import { Http } from '@angular/http';
   styleUrls: ['./fileuploder.component.css']
 })
 export class FileuploderComponent implements OnInit {
-
   constructor(private http:Http) { }
   uplodefile(event){
     let elemnt = event.target;

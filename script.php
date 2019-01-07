@@ -1,5 +1,7 @@
 <?php
 header('Access-Control-Allow-Origin: *');
+header("Access-Control-Allow-Methods: PUT, GET, POST");
+header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept");
 var_dump($_FILES);
 $publik_key='a5aa96d5c66d9bec29a1';
 
@@ -21,6 +23,4 @@ curl_setopt($ch,CURLOPT_POSTFIELDS,$post);
 
 $response=curl_exec($ch);
 var_dump($response);
-
-$sdfd=45455;
 ?>
